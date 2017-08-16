@@ -1,6 +1,5 @@
 //Program calculate cache  hit and miss rate for a given sequence of memory access. 
-//32 bits address assumed. Can change the cache size(Block size, no. of sets, 
-//no. of lines in eah set can be varied by changing the global variables.
+
 
 #include<stdio.h>
 #include<stdlib.h>
