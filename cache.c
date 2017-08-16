@@ -6,13 +6,13 @@
 #include<string.h>
 #include<math.h>
 
-#define SIZE 32							//32 sets.
-#define LINES 1							//Direct mapping. so only a single line in each set.
+#define SIZE 32						//32 sets.
+#define LINES 1						//Direct mapping. so only a single line in each set.(to cange to set associative, increase LINES)
 
 unsigned int b=4;						//number of bits in offset.(Block is is 2^b)
 unsigned int s=5;						//number of bits in set.(Change these variable values to change cache size etc.)
-unsigned int t;							//number of bits in tag.
-unsigned int b_mask;						//masks to calculate tag,set and b values.
+unsigned int t;						//number of bits in tag.
+unsigned int b_mask;					//masks to calculate tag,set and b values.
 unsigned int tag_mask;
 unsigned int set_mask;
 
@@ -157,7 +157,7 @@ int main()
 		}
 		total++;
 	}
-	printf("%.2f\n",(float)hit_count/total);
+	printf("%f\n",(float)hit_count/total);
 
 	return 0;
 }
